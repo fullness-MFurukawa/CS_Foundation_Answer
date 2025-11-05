@@ -1,0 +1,21 @@
+﻿namespace Ex_03_14;
+
+static class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("値1を入力してください->");
+        int x = int.Parse(Console.ReadLine()!);
+        Console.Write("値2を入力してください->");
+        int y = int.Parse(Console.ReadLine()!);
+        Calculator calculator = new Calculator();
+        try
+        {
+            int result = calculator.Div(x, y);
+            Console.WriteLine($"{x} / {y} = {result}");    
+        }catch(Exception ex)
+        {
+            Console.WriteLine($"例外:{ex.Message}");
+        }
+    }
+}
