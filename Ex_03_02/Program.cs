@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace Ex_03_02;
+﻿namespace Ex_03_02;
 
 static class Program
 {

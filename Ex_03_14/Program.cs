@@ -5,17 +5,10 @@ static class Program
     static void Main(string[] args)
     {
         Console.Write("値1を入力してください->");
-        int x = int.Parse(Console.ReadLine()!);
+        int value1 = int.Parse(Console.ReadLine()!);
         Console.Write("値2を入力してください->");
-        int y = int.Parse(Console.ReadLine()!);
-        Calculator calculator = new Calculator();
-        try
-        {
-            int result = calculator.Div(x, y);
-            Console.WriteLine($"{x} / {y} = {result}");    
-        }catch(Exception ex)
-        {
-            Console.WriteLine($"例外:{ex.Message}");
-        }
+        int value2 = int.Parse(Console.ReadLine()!);
+        Console.WriteLine($"加算: {value1.Add(value2)}");
+        Console.WriteLine($"平均: {value1.Average(value2)}");
     }
 }

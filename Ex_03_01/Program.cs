@@ -1,5 +1,5 @@
 ﻿namespace Ex_03_01;
-static static class Program
+static class Program
 {
     static void Main(string[] args)
     {

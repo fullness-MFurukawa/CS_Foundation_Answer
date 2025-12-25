@@ -1,4 +1,4 @@
-﻿namespace Ex_03_15;
+﻿namespace Ex_03_16;
 
 public class InputParameterLessThanZeroException : Exception
 {
